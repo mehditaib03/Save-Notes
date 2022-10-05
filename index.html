@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <header>
+            <img class="header-logo" src="https://www.gstatic.com/images/branding/product/1x/keep_48dp.png">
+            <h2 class="header-title">Keep</h2>
+        </header>
+        <div id="form-container">
+            <form id="form" autocomplete="off">
+                <input id="note-title" class="hide" placeholder="Title" type="text">
+                <input id="note-text" placeholder="Take a note..." type="text">
+                <div id="form-buttons" class="hide">
+                    <button type="submit" id="submit-button">Submit</button>
+                    <button type="button" id="form-close-button">Close</button>
+                </div>
+            </form>
+        </div>
+        <div id="notes"></div>
+        <div id="placeholder">
+            <img id="placeholder-logo">
+            <p id="placeholder-text">Notes you add appear here</p>
+        </div>
+
+        <div id="modal" class="modal hide">
+            <div class="modal-content">
+                <input class="modal-title" id="title" type="text" name="title" placeholder="text" id="Updated-Title">
+                <input  class="modal-text" id="text"; type="text" name="body" placeholder="content" id="Updated-body">
+                <button id="close-modal-btn" class="modal-close-button">Close </button>
+            </div>
+        </div>
+
+    </main>
+    <script src="index.js"></script>
+</body>
+
+
+</html>
+
