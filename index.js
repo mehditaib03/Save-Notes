@@ -30,10 +30,6 @@ function clearForm() {
   takeNotePlaceHolder.value = ""
 }
 
-// let titre = ""
-// let content = ""
-// let newObject = window.localStorage.getItem("myObject");
-// console.log(JSON.parse(newObject));
 
 const newObject1 = window.localStorage.getItem("myObject");
 const localStrValue = JSON.parse(newObject1)
@@ -65,19 +61,11 @@ function fillObject() {
 // Push Color to 
 function testValue(x, valu,Parent) {
   testArray[x] = { ...testArray[x], color: valu }
-  // console.log(testArray[x]);
-  // console.log('testArray',testArray);
-  // console.log('localStrValue',localStrValue);
+
   const parentInput = Parent.parentElement.parentElement.parentElement;
   parentInput.style.backgroundColor = valu
   window.localStorage.setItem("myObject", JSON.stringify(testArray));
   console.log(testArray);
-  // console.log('localStrValue',localStrValue);
-  // const noteClassDiv = document.getElementsByClassName('note') 
-  
-
-
-  // console.log('get color',testArray[x].color);
 }
 
 let updateGetIndice = []
@@ -192,17 +180,13 @@ function showMemoLocalStorage() {
     </div>
     
        `
-      // onclick="gt(${indice})
-      // document.getElementById('close-modal-btn').addEventListener("click",()=>{
-      //   gt(indice)
-      // })
+    
     })
 
     noteDiv.innerHTML = NoteHtml
   }
 }
 
-// console.log(NoteBar);
 
 /*show memo from locStrg in the begining */
 showMemoLocalStorage()
@@ -264,7 +248,6 @@ function changeColor() {
     // console.log(Color);
   }  
 }
-// const noteClassDiv = document.getElementsByClassName('note')
 
 
 /*check if clicked Outside the placeholder  */
